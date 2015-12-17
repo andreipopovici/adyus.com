@@ -1,0 +1,34 @@
+{
+  "name": "adyus.com",
+  "version": "0.0.1",
+  "description": "Homepage for adyus.com",
+  "author": "Andrei Popovici",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "normalize.css": "^3.0.3"
+  },
+  "devDependencies": {
+    "cssnext": "^1.1.0",
+    "http-server": "^0.8.0",
+    "watch": "^0.14.0"
+  },
+  "scripts": {
+    "css": "cssnext src/style.css css/style.css",
+    "minify:css": "cssnext -c src/style.css css/style.min.css",
+    "watch:css": "watch 'npm run minify:css' ./src",
+    "serve": "http-server",
+    "start": "npm run watch:css & npm run serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andreipopovici/adyus.com.git"
+  },
+  "keywords": [
+    "CSS"
+  ],
+  "bugs": {
+    "url": "https://github.com/andreipopovici/adyus.com/issues"
+  },
+  "homepage": "http://adyus.com",
+  "main": "index.js"
+}
